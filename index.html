@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de texto a binario</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header-binario">
+        <div class="header-content">
+            <img class="logo-binario" src="Logo-EST.svg" alt="logo">
+            <h1 class="title-binario">EST-SOFTWARE BINARY</h1>
+        </div>
+    </header>
+    
+    <main class="main-binario">
+        <section class="section-convert">
+            <h1 class="convert-title">Convertir texto a binario</h1>
+            <textarea class="textarea-input" id="inputText" rows="4" placeholder="Escribe el texto a convertir"></textarea><br>
+            <button class="btn-convert" id="convertToBinary">Convertir</button><br>
+            <span class="loader" id="loader" style="display:none;"></span>
+            <button class="btn-copy" id="copyBinaryButton" style="display:none;">
+                <i class="fas fa-copy"></i>
+            </button><br>
+            <div class="output-binario" id="binaryOutput"></div>
+        </section>
+    
+        <section class="section-convert">
+            <h1 class="convert-title">Convertir Binario a texto</h1>
+            <textarea class="textarea-input" id="inputBinary" rows="4" placeholder="Escribe el binario a convertir"></textarea><br>
+            <button class="btn-convert" id="convertToText">Convertir</button><br>
+            <div class="output-binario" id="textOutput"></div>
+        </section>
+    </main>    
+
+    <div class="message-notification-modal" id="binaryModal" style="display: none;">
+        <i class="fas fa-check-circle message-icon"></i>
+        <p class="message-tittle" id="binaryModalText"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
